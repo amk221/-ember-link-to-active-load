@@ -14,6 +14,26 @@ And even more so because Ember changes its mind once `/foo/1` has loaded,
 realises its 'mistake' an makes `/foo/2` not active anymore - creating a flickering
 effect.
 
+<b>Hacky fix</b>
+
+```javascript
+// application/route.js
+actions: {
+  didTransition() {
+    scheduleOnce('afterRender', this, () => {
+      jQuery('.ember-application').addClass('is-loaded');
+    });
+  }
+}
+```
+
+```css
+// app.scss
+.ember-application.is-loaded a.is-active {
+  border: 1px solid red;
+}
+```
+
 
 <hr>
 
