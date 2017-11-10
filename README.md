@@ -2,6 +2,12 @@
 
 <img src="demo.gif">
 
+Whilst loading the application for route `/foo/1`, notice that `/foo/2`
+is also considered 'active', which seems wrong.
+
+<hr>
+
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
