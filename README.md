@@ -10,7 +10,6 @@ so that link should not be active.
 
 This is confusing and also creates a flickering effect whilst the application loads.
 
-This only happens when `loading.hbs` templates are present
 
 <hr>
 
