@@ -3,7 +3,12 @@
 <img src="demo.gif">
 
 Whilst loading the application for route `/foo/1`, notice that `/foo/2`
-is also considered 'active', which is wrong, and creates a flickering effect when our application loads.
+is also considered 'active'.
+
+As far as the user is concered, they visited `/foo/1`, _not_ `/foo/2`
+so that page should not be active.
+
+This is confusing and creates a flickering effect whilst the application loads.
 
 This only happens when `loading.hbs` templates are present
 
