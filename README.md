@@ -5,6 +5,8 @@
 Whilst loading the application for route `/foo/1`, notice that `/foo/2`
 is also considered 'active', which seems wrong.
 
+This only happens when `loading.hbs` templates are present
+
 <hr>
 
 
