@@ -8,7 +8,11 @@ is also considered 'active'.
 As far as the user is concered, they visited `/foo/1`, _not_ `/foo/2`
 so that link should not be active.
 
-This is confusing and also creates a flickering effect whilst the application loads.
+This is confusing, as it would not happen on a tradition non-SPA website.
+
+And even more so because Ember changes its mind once `/foo/1` has loaded,
+realises its 'mistake' an makes `/foo/2` not active anymore - creating a flickering
+effect.
 
 
 <hr>
