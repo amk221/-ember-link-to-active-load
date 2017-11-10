@@ -3,7 +3,7 @@
 <img src="demo.gif">
 
 Whilst loading the application for route `/foo/1`, notice that `/foo/2`
-is also considered 'active', which seems wrong.
+is also considered 'active', which is wrong, and creates a flickering effect when our application loads.
 
 This only happens when `loading.hbs` templates are present
 
