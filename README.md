@@ -10,8 +10,8 @@ so that link should not be active.
 
 This is confusing, as it would not happen on a tradition non-SPA website.
 
-And even more so because Ember changes its mind once `/foo/1` has loaded,
-realises its 'mistake' an makes `/foo/2` not active anymore - creating a flickering
+...and even more so because Ember changes its mind once `/foo/1` has loaded,
+realises its 'mistake' and makes `/foo/2` not active anymore - creating a flickering
 effect.
 
 <b>Hacky fix</b>
